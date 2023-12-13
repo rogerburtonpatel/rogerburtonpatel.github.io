@@ -1,59 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your GitHub Page Title</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 1em;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Roger Burtonpatel</title>
+        <script type="text/javascript" async
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+    </script>
+    <script type="text/javascript" async
+        id="MathJax-script"
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        crossorigin="anonymous"
+    >
+        MathJax = {
+            tex: {
+                packages: {'[+]': ['amsmath', 'svg']}, // Include the 'amsmath' package
+            },
+            options: {
+                renderActions: {
+                    addMenu: [0, '', '']
+                },
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            }
+        };
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest"></head>
 <body>
 
-    <header>
-        <h1>Roger Burtonpatel / SPOT</h1>
-        <p>Welcome to My GitHub Page!</p>
-    </header>
+<header>
+    <div>
+    </div>
+    <nav>
+        <a href="resume.pdf" target="_blank">Resume</a>
+        <a href="https://github.com/rogerburtonpatel">Github</a>
+        <!-- <a href="#resources">Resources</a> -->
+    </nav>
+</header>
 
-    <section>
-        <h2>About Me / Project</h2>
-        <p>
-            This is a brief description of yourself or your project.
-            Customize this section to provide information about what visitors can find on your GitHub page.
-        </p>
-    </section>
 
-    <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-    </footer>
+<main>
+    <div>
+        <!-- <span class="brain" v-b-tooltip.hover title="Private"></span> -->
+        <div class="fade-in">
+            <h1>    
+                \[
+                \begin{aligned}
+                    &\frac{\textit{music} \quad \textit{connection} \quad \textit{practice}}
+                        {\text{$🧠 \Downarrow 🧠\;'$}} \\
+                \end{aligned}
+                \]
+            </h1>
+        </div>
+
+        <!-- Email Section -->
+
+    </div>
+    <div class="email-section">
+        <p>Email: <a href="mailto:example@gmail.com">roger.burtonpatel@tufts.edu</a></p>
+    </div>
+</main>
+
+
+<footer>
+    <p>&copy; 2023 Roger Burtonpatel. All rights reserved.</p>
+</footer>
 
 </body>
+
+<style>
+    body {
+        background-color: #f5f5dc; /* Cream-colored background */
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    header {
+        background-color: #333; /* Dark color for the top tab bar */
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Ensure the main container takes at least the full height of the viewport */
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    footer {
+        text-align: center;
+        padding: 1em;
+        background-color: #333;
+        color: #fff;
+    }
+
+    .fade-in {
+        animation: fadeIn 3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .brain {
+        display: inline-block;
+        width: 20px; /* Adjust the width as needed */
+        height: 20px; /* Adjust the height as needed */
+        background: url('/images/brain-fa.svg') center center no-repeat;
+        background-size: contain; /* Ensure the background image is contained within the element */
+        /* Add any additional styles you want */
+    }
+
+    .fraction {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .numerator {
+      text-align: center;
+    }
+
+    .denominator {
+      border-top: 1px solid #000;
+      text-align: center;
+      padding-top: 5px;
+      margin-top: 5px;
+    }
+
+    .arrow {
+      font-size: 24px;
+      margin: 0 5px;
+    }
+
+    .email-section {
+        position: absolute;
+        bottom: 0;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+</style>
 </html>
