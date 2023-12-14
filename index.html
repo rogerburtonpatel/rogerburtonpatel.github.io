@@ -31,49 +31,32 @@
     <link rel="manifest" href="/images/site.webmanifest"></head>
 <body>
 
-<header>
-    <div>
-    </div>
-    <nav>
-        <a href="resume.pdf" target="_blank">Resume</a>
-        <a href="https://github.com/rogerburtonpatel">Github</a>
-        <!-- <a href="#resources">Resources</a> -->
-    </nav>
-</header>
-
-
 <main>
-    <div>
+        <div class="fader name"><h1>Roger Burtonpatel</h1></div>
+        <img src="eu.jpeg" class="fader" alt="Aiderondack Mountains, 2023">
         <!-- <span class="brain" v-b-tooltip.hover title="Private"></span> -->
-        <div class="fade-in">
+        <div class="fader texblock">
             <h1>    
                 \[
                 \begin{aligned}
-                    &\frac{\textit{music} \quad \textit{connection} \quad \textit{practice}}
+                    &\frac{🎵 \quad \quad 💻 \quad \quad 🏓}
                         {\text{$🧠 \Downarrow 🧠\;'$}} \\
                 \end{aligned}
                 \]
             </h1>
         </div>
-
-        <!-- Email Section -->
-
-    </div>
-    <div class="email-section">
-        <p>Email: <a href="mailto:example@gmail.com">roger.burtonpatel@tufts.edu</a></p>
+    <div class="info">
+        <a href="resume.pdf" target="_blank">Resume</a>
+        <a href="https://github.com/rogerburtonpatel">Github</a>
+        <a href="mailto:example@gmail.com">roger.burtonpatel@tufts.edu</a>
     </div>
 </main>
-
-
-<footer>
-    <p>&copy; 2023 Roger Burtonpatel. All rights reserved.</p>
-</footer>
 
 </body>
 
 <style>
     body {
-        background-color: #f5f5dc; /* Cream-colored background */
+        background-color: #ecfbff; /* Cream-colored background */
         margin: 0;
         font-family: Arial, sans-serif;
         display: flex;
@@ -81,88 +64,61 @@
         height: 100vh;
     }
 
-    header {
-        background-color: #333; /* Dark color for the top tab bar */
-        padding: 15px;
-        text-align: center;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav {
-        display: flex;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        margin: 0 10px;
-    }
-
     main {
+        position: relative;
         display: flex;
         flex-direction: column;
         min-height: 100vh; /* Ensure the main container takes at least the full height of the viewport */
-        justify-content: center; 
+        justify-content: top; 
         align-items: center; 
+        height: 90%;
     }
 
-    footer {
-        text-align: center;
-        padding: 1em;
-        background-color: #333;
-        color: #fff;
+    main > div {
+        height: 100px; /* Set a fixed height */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .fade-in {
-        animation: fadeIn 3s ease-in-out;
+    .name {
+        position: relative;
+        height: fit-content; /* Maintain aspect ratio */
+        /* margin-top: 10px; Add some margin to separate the image from the divs */
     }
+
+    img {
+        position: relative;
+        max-width: 30%; /* Set maximum width to ensure the image fits within the container */
+        height: fit-content; /* Maintain aspect ratio */
+        /* margin-top: 10px; Add some margin to separate the image from the divs */
+    }
+
+    .texblock {
+        position: relative;
+    }
+
+    .fader {
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    /* to be used later */
+    .fader2 {animation-delay:0.6666s;}
+    .fader3 {animation-delay:1.33333s;}
+
 
     @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
     }
 
-    .brain {
-        display: inline-block;
-        width: 20px; /* Adjust the width as needed */
-        height: 20px; /* Adjust the height as needed */
-        background: url('/images/brain-fa.svg') center center no-repeat;
-        background-size: contain; /* Ensure the background image is contained within the element */
-        /* Add any additional styles you want */
-    }
-
-    .fraction {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .numerator {
-      text-align: center;
-    }
-
-    .denominator {
-      border-top: 1px solid #000;
-      text-align: center;
-      padding-top: 5px;
-      margin-top: 5px;
-    }
-
-    .arrow {
-      font-size: 24px;
-      margin: 0 5px;
-    }
-
-    .email-section {
-        position: absolute;
-        bottom: 0;
+    .info {
+        position: relative;
+        top: 10%;
+        /* margin-top: 35%; */
         align-self: center;
         display: flex;
         flex-direction: column;
