@@ -46,6 +46,7 @@
             </h1>
         </div>
     <div class="info">
+        <a href="about.html">About</a>
         <a href="resume.pdf" target="_blank">Resume</a>
         <a href="https://github.com/rogerburtonpatel">Github</a>
         <a href="mailto:example@gmail.com">roger.burtonpatel@tufts.edu</a>
@@ -66,16 +67,14 @@
 
     main {
         position: relative;
-        display: flex;
-        flex-direction: column;
+        display: inherit;
+        flex-direction: inherit;
         min-height: 100vh; /* Ensure the main container takes at least the full height of the viewport */
-        justify-content: top; 
         align-items: center; 
-        height: 90%;
     }
-
+    
     main > div {
-        height: 100px; /* Set a fixed height */
+        height: 10%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -83,15 +82,13 @@
 
     .name {
         position: relative;
-        height: fit-content; /* Maintain aspect ratio */
-        /* margin-top: 10px; Add some margin to separate the image from the divs */
+        height: fit-content; 
     }
 
     img {
         position: relative;
-        max-width: 30%; /* Set maximum width to ensure the image fits within the container */
-        height: fit-content; /* Maintain aspect ratio */
-        /* margin-top: 10px; Add some margin to separate the image from the divs */
+        max-width: 30%; 
+        height: fit-content; 
     }
 
     .texblock {
@@ -101,24 +98,15 @@
     .fader {
         animation: fadeIn 1.5s ease-in-out;
     }
-    /* to be used later */
-    .fader2 {animation-delay:0.6666s;}
-    .fader3 {animation-delay:1.33333s;}
-
 
     @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+        from {opacity: 0;}
+        to {opacity: 1;}
     }
 
     .info {
         position: relative;
         top: 10%;
-        /* margin-top: 35%; */
         align-self: center;
         display: flex;
         flex-direction: column;
