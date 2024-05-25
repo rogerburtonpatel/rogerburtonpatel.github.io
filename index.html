@@ -7,24 +7,6 @@
         <script type="text/javascript" async
         src="https://polyfill.io/v3/polyfill.min.js?features=es6">
     </script>
-    <script type="text/javascript" async
-        id="MathJax-script"
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-        crossorigin="anonymous"
-    >
-        MathJax = {
-            tex: {
-                packages: {'[+]': ['amsmath', 'svg']}, // Include the 'amsmath' package
-            },
-            options: {
-                renderActions: {
-                    addMenu: [0, '', '']
-                },
-                ignoreHtmlClass: 'tex2jax_ignore',
-                processHtmlClass: 'tex2jax_process'
-            }
-        };
-    </script>
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -33,23 +15,23 @@
 
 <main>
         <div class="fader name"><h1>Roger Burtonpatel</h1></div>
-        <img src="eu.jpeg" class="fader" alt="Aiderondack Mountains, 2023">
+        <div class="brief"> <p>Hi, I'm Roger. 
+            I'm a <a href="https://www.hluce.org/programs/luce-scholars/directory/roger-burtonpatel/" target="_blank">Luce Scholar</a> 
+            and a recent graduate of Tufts University. 
+            <div>I enjoy Programming Languages, making music, hacking, ping-pong, and Portuguese. </div>
+            <div>I'm currently applying to graduate programs for the '25 Ph.D. cycle.</div>
+        </p> </div>
+        <div class="fader me-pic"><img src="eu.jpeg" alt="Aiderondack Mountains, 2023"></div>
+        
         <!-- <span class="brain" v-b-tooltip.hover title="Private"></span> -->
         <div class="fader texblock">
-            <h1>    
-                \[
-                \begin{aligned}
-                    &\frac{🎵 \quad \quad 💻 \quad \quad 🏓}
-                        {\text{$🧠 \Downarrow 🧠\;'$}} \\
-                \end{aligned}
-                \]
-            </h1>
+            <img src="tex.png" class="fader" alt="Brain Derivation">
         </div>
     <div class="info">
         <a href="about.html">About</a>
         <a href="resume.pdf" target="_blank">Resume</a>
-        <a href="https://github.com/rogerburtonpatel">Github</a>
-        <a href="mailto:example@gmail.com">roger.burtonpatel@tufts.edu</a>
+        <a href="https://github.com/rogerburtonpatel">GitHub</a>
+        <a href="mailto:roger.burtonpatel@tufts.edu">Email me</a>
     </div>
 </main>
 
@@ -57,12 +39,12 @@
 
 <style>
     body {
-        background-color: #ecfbff; /* Cream-colored background */
+        background-color: #ffffff; /* Cream-colored background */
         margin: 0;
         font-family: Arial, sans-serif;
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        /* height: 100vh; */
     }
 
     main {
@@ -85,19 +67,31 @@
         height: fit-content; 
     }
 
-    img {
+    .me-pic {
         position: relative;
-        max-width: 30%; 
+        top: 2.5%;
+    }
+
+    .me-pic > img {
+        position: relative;
+        max-width:  30%; 
+        max-height: 100%; 
+        /* width: auto;  */
+        /* height: fit-content;  */
+    }
+    .texblock > img {
+        position: relative;
+        max-width: 20%; 
         max-height: 100%; 
         width: auto; 
         height: fit-content; 
     }
 
-    .texblock {
+    /* .texblock {
         position: relative;
         min-width:  10%;
         min-height: 10%;
-    }
+    } */
 
     .fader {
         animation: fadeIn 1.5s ease-in-out;
@@ -110,7 +104,7 @@
 
     .info {
         position: relative;
-        top: 10%;
+        top: 2.5%;
         align-self: center;
         display: flex;
         flex-direction: column;
