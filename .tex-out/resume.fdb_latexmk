@@ -1,13 +1,13 @@
 # Fdb version 4
-["xdvipdfmx"] 1716929075 ".tex-out/resume.xdv" "resume.pdf" "resume" 1716929075 0
-  ".tex-out/resume.xdv" 1716929075 36016 3c5fbaa1416b278c0fff3d97e1f1e064 "xelatex"
+["xdvipdfmx"] 1718285408 ".tex-out/resume.xdv" "resume.pdf" "resume" 1718285409 0
+  ".tex-out/resume.xdv" 1718285408 36680 66f231d91cd1db46392b910b5fdd6996 "xelatex"
   (generated)
   "resume.pdf"
   (rewritten before read)
-["xelatex"] 1716929075 "/Users/rogerburtonpatel/home/website/rogerburtonpatel.github.io/resume.tex" ".tex-out/resume.xdv" "resume" 1716929075 0
-  ".tex-out/resume.aux" 1716929075 520 c8df4005dd26d70143a510d6ec67caa3 "xelatex"
-  ".tex-out/resume.out" 1716929075 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "/Users/rogerburtonpatel/home/website/rogerburtonpatel.github.io/resume.tex" 1716929074 6909 578d58ee055969d91245977a2cb75dbe ""
+["xelatex"] 1718285408 "/Users/rogerburtonpatel/home/website/rogerburtonpatel.github.io/resume.tex" ".tex-out/resume.xdv" "resume" 1718285409 0
+  ".tex-out/resume.aux" 1718285408 520 c8df4005dd26d70143a510d6ec67caa3 "xelatex"
+  ".tex-out/resume.out" 1718285408 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "/Users/rogerburtonpatel/home/website/rogerburtonpatel.github.io/resume.tex" 1718285408 7030 bfc057e1d3bdc13e78d4fdadf7c5d53f ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -67,7 +67,7 @@
   "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1677365944 40745 87bb86a62d462f93a1efc6b0c65c872e ""
   "/usr/local/texlive/2023/texmf-var/web2c/xetex/xelatex.fmt" 1697078979 10502837 8a28b148c803f64fe6bdd91bc5f23fda ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "resume.tex" 1716929074 6909 578d58ee055969d91245977a2cb75dbe ""
+  "resume.tex" 1718285408 7030 bfc057e1d3bdc13e78d4fdadf7c5d53f ""
   (generated)
   ".tex-out/resume.aux"
   ".tex-out/resume.log"
