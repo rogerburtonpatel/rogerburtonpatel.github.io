@@ -1,60 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Roger Burtonpatel</title>
-        <script type="text/javascript" async
-        src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roger Burtonpatel</title>
+    <script type="text/javascript" async src="https://polyfill.io/v3/polyfill.min.js?features=es6">
     </script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="manifest" href="/images/site.webmanifest"></head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <body>
 
-<main class="fader">
-    <br>
-        <div class="name"><h1>Roger Burtonpatel</h1></div>
-        <div class="brief"> <p>Hi, I'm Roger. 
-            I'm a <a href="https://lucescholars.org/scholar-directory/roger-burtonpatel/" target="_blank">2024 Luce Scholar</a> 
-            and a recent graduate of Tufts University. 
-            <br>
-            I enjoy Programming Languages and compiler hacking. 
+    <main class="fader">
+        <br>
+        <div class="name">
+            <h1>Roger Burtonpatel</h1>
+        </div>
+        <!-- <button class="btn"><i class="fa fa-home"></i></button> -->
+        <div class="brief">
+            <p>Hi, I'm Roger.
+                I'm a <a href="https://lucescholars.org/scholar-directory/roger-burtonpatel/" target="_blank">2024 Luce
+                    Scholar</a>
+                and a recent graduate of Tufts University.
+                <br>
+                I enjoy Programming Languages and compiler hacking.
             <div class="indexabout">
                 <br>
-                Last May, I completed a <a href="Thesis.pdf" target="_blank">thesis in PL</a>, 
-                and I'm currently a developer on the <a href="https://github.com/vellvm/vellvm" target="_blank">vellvm</a> group at Penn. 
+                Last May, I completed a <a href="assets/Thesis.pdf" target="_blank">thesis in PL</a>,
+                and I'm currently a developer on the <a href="https://github.com/vellvm/vellvm"
+                    target="_blank">vellvm</a> group at Penn.
                 <br>
-                 I love making music, building data pipelines, ping-pong, and
-                 Portuguese. 
+                I love making music, building data pipelines, ping-pong, and
+                Portuguese.
                 <br>
-                 I'm currently applying to graduate programs for the 2025 Ph.D. cycle.
-                </div>
+                I'm currently applying to graduate programs for the 2025 Ph.D. cycle.
+            </div>
 
-        </p> </div>
-        <div class="me-pic"><img src="eu.jpeg" alt="Aiderondack Mountains, 2023"></div>
-        
-        <!-- <span class="brain" v-b-tooltip.hover title="Private"></span> -->
-        <div class="texblock">
-            <img src="tex2.png" alt="Brain Derivation">
+            </p>
         </div>
-    <div class="info">
-        <a href="about.html">About</a>
-        <a href="resume.pdf" target="_blank">Resume</a>
-        <a href="https://github.com/rogerburtonpatel">GitHub</a>
-        <a href="mailto:roger.burtonpatel@tufts.edu">Email me</a>
-    </div>
-</main>
+        <div class="me-pic"><img src="assets/eu.jpeg" alt="Me at the Adirondack Mountains, 2023"></div>
+        <div class="texblock">
+            <img src="assets/tex2.png" alt="Brain Derivation">
+        </div>
+        <div class="info">
+            <a href="about.html">About</a>
+            <div class="pls">
+                <ul class="header__links list-unstyled list-inline">
+                    <li><a href="assets/cv.pdf" target="_blank" class="no-highlight"><i aria-hidden="true" title="CV"
+                                class="fa fa-file-text-o" data-fa-transform="grow-8"></i><span
+                                class="sr-only">CV</span></a></li>
+                    <li><a href="https://github.com/rogerburtonpatel" target="_blank" class="no-highlight"><i
+                                aria-hidden="true" title="GitHub" class="fa fa-github-alt"></i><span
+                                class="sr-only">GitHub</span></a></li>
+                    <!-- <li><a href="https://types.pl/@sliminality" class="no-highlight"><i aria-hidden="true" title="Mastodon" class="fa fa-brands fa-mastodon"></i><span class="sr-only">Mastodon</span></a></li> -->
+                    <li><a href="https://linkedin.com/in/roger-burtonpatel-b01729215/" target="_blank"
+                            class="no-highlight"><i aria-hidden="true" title="LinkedIn" class="fa fa-linkedin"></i><span
+                                class="sr-only">LinkedIn</span></a></li>
+                </ul>
+            </div>
+            <strong>roger [dot] burtonpatel [at] tufts [dot] edu</strong>
+        </div>
+    </main>
 
 </body>
 
 <style>
     body {
-        background-color: #dffaf5; /* Cream-colored background */
+        background-color: #dffaf5;
+        /* Cream-colored background */
         margin: 0;
-        font-family: 'Helvetica', 'Arial', sans-serif;        display: flex;
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        display: flex;
         flex-direction: column;
         /* height: 100vh; */
     }
@@ -64,11 +86,12 @@
         position: relative;
         display: inherit;
         flex-direction: inherit;
-        min-height: 100vh; /* Ensure the main container takes at least the full height of the viewport */
-        align-items: center; 
+        min-height: 100vh;
+        /* Ensure the main container takes at least the full height of the viewport */
+        align-items: center;
     }
-    
-    main > div {
+
+    main>div {
         height: 10%;
         display: flex;
         flex-direction: column;
@@ -77,7 +100,7 @@
 
     .name {
         position: relative;
-        height: fit-content; 
+        height: fit-content;
     }
 
     .me-pic {
@@ -85,20 +108,20 @@
         top: 2.5%;
     }
 
-    .me-pic > img {
+    .me-pic>img {
         position: relative;
-        max-width:  100%; 
-        max-width:  400px; 
-        max-height: 30%; 
+        max-width: 100%;
+        max-width: 400px;
+        max-height: 30%;
         /* width: auto;  */
         /* height: fit-content;  */
     }
 
-    .texblock > img {
+    .texblock>img {
         position: relative;
-        max-width:  100%; 
-        max-width:  320px; 
-        max-height: 30%; 
+        max-width: 100%;
+        max-width: 320px;
+        max-height: 30%;
     }
 
     .fader {
@@ -106,9 +129,34 @@
     }
 
     @keyframes fadeIn {
-        from {opacity: 0;}
-        to {opacity: 1;}
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
+
+
+    .header__links {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .list-unstyled {
+        list-style-type: none;
+    }
+
+    .list-inline {
+        display: flex;
+        /* align-items: inherit; */
+    }
+
+    .list-inline li:not(:last-of-type) {
+        padding-right: 20px;
+    }
+
 
     .info {
         position: relative;
@@ -118,4 +166,5 @@
         flex-direction: column;
     }
 </style>
+
 </html>
